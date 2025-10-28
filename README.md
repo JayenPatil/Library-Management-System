@@ -70,6 +70,7 @@ CREATE TABLE return_status (         return_id VARCHAR(10) PRIMARY KEY,
             return_book_isbn VARCHAR(50),
             FOREIGN KEY (return_book_isbn) REFERENCES books(isbn));
 
+
 ## **2. CRUD Operations**
 **Create**: Inserted sample records into the books table.
 **Read**: Retrieved and displayed data from various tables.
