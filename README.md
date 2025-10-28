@@ -18,6 +18,9 @@ It covers database creation, CRUD operations, CTAS, stored procedures, and advan
 ## 🧱 **Project Structure**
 
 ### 1️⃣ Database Setup
+
+![Uploading image.png…]()
+
 Created the database `library_db` with the following tables:
 - **branch** – stores branch details  
 - **employees** – employee details linked to branches  
