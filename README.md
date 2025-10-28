@@ -1,21 +1,36 @@
-Project Overview
-Project Title: Library Management System
+# 📚 Library Management System (SQL Project - P2)
 
-This project demonstrates the implementation of a Library Management System using SQL. It includes creating and managing tables, performing CRUD operations, and executing advanced SQL queries. The goal is to showcase skills in database design, manipulation, and querying.
+### 🧩 Project Overview
+This project demonstrates the implementation of a **Library Management System** using **SQL**.  
+It covers database creation, CRUD operations, CTAS, stored procedures, and advanced SQL queries.
 
-Objectives
+- **Project Title:** Library Management System  
+- **Database Name:** `library_db`  
+ 
 
-Set up the Library Management System Database: Create and populate the database with tables for branches, employees, members, books, issued status, and return status.
-CRUD Operations: Perform Create, Read, Update, and Delete operations on the data.
-CTAS (Create Table As Select): Utilize CTAS to create new tables based on query results.
-Advanced SQL Queries: Develop complex queries to analyze and retrieve specific data.
-
-Project Structure
-
-1. Database Setup
-<img width="1037" height="527" alt="image" src="https://github.com/user-attachments/assets/4f7c2304-b3da-465e-8c34-2e3f57db21e5" />
+## 🎯 **Objectives**
+- **Database Setup:** Create and populate tables for branches, employees, members, books, issued and return status.  
+- **CRUD Operations:** Perform Create, Read, Update, and Delete actions.  
+- **CTAS (Create Table As Select):** Generate new tables from query results.  
+- **Advanced Queries:** Develop analytical SQL queries for reporting and insights.  
 
 
-Database Creation: Created a database named library_db.
-Table Creation: Created tables for branches, employees, members, books, issued status, and return status. Each table includes relevant columns and relationships.
+## 🧱 **Project Structure**
 
+### 1️⃣ Database Setup
+Created the database `library_db` with the following tables:
+- **branch** – stores branch details  
+- **employees** – employee details linked to branches  
+- **members** – library members with registration details  
+- **books** – book catalog with rental info  
+- **issued_status** – records of books issued to members  
+- **return_status** – records of returned books  
+
+```sql
+CREATE DATABASE library_db;
+CREATE TABLE branch (...);
+CREATE TABLE employees (...);
+CREATE TABLE members (...);
+CREATE TABLE books (...);
+CREATE TABLE issued_status (...);
+CREATE TABLE return_status (...);
