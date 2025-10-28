@@ -19,7 +19,7 @@ It covers database creation, CRUD operations, CTAS, stored procedures, and advan
 
 ### 1️⃣ Database Setup
 
-![Uploading image.png…]()
+<img width="1042" height="527" alt="image" src="https://github.com/user-attachments/assets/cf5882b9-d3c4-4f56-9263-986c29a959b2" />
 
 Created the database `library_db` with the following tables:
 - **branch** – stores branch details  
