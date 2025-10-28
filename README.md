@@ -69,7 +69,8 @@ CREATE TABLE return_status (         return_id VARCHAR(10) PRIMARY KEY,
             return_date DATE,
             return_book_isbn VARCHAR(50),
             FOREIGN KEY (return_book_isbn) REFERENCES books(isbn));
-**2. CRUD Operations**
+
+## **2. CRUD Operations**
 **Create**: Inserted sample records into the books table.
 **Read**: Retrieved and displayed data from various tables.
 **Update**: Updated records in the employees table.
@@ -104,7 +105,7 @@ from issued_status
 group by issued_emp_id
 having count(*) > 1;
 
-**3. CTAS (Create Table As Select)**
+## **3. CTAS (Create Table As Select)**
 
 **Task 6: Create Summary Tables**: Used CTAS to generate new tables based on query results - each book and total book_issued_cnt**
 
@@ -117,7 +118,7 @@ group by b.isbn,b.book_title;
 select * from book_issued_cnt;
 
 
-**4. Data Analysis & Findings**
+## **4. Data Analysis & Findings**
 The following SQL queries were used to address specific questions:
 
 **Task 7. Retrieve All Books in a Specific Category:**
@@ -134,12 +135,12 @@ join issued_status as ist
 on ist.issued_book_isbn = b.isbn
 group by category;
 
-**9.List Members Who Registered in the Last 180 Days:**
+**Task 9:List Members Who Registered in the Last 180 Days:**
 
 select * from members
 where reg_date = date_sub(curdate(),interval 180 day);
  
-**List Employees with Their Branch Manager's Name and their branch details:**
+**Task 10:List Employees with Their Branch Manager's Name and their branch details:**
 
 select e.emp_id as employee_id,
 e.emp_name as employee_name,
@@ -166,7 +167,7 @@ left join return_status as rs
 on ist.issued_id = rs.issued_id
 where rs.return_id is null;
 
-**Advanced SQL Operations**
+## **Advanced SQL Operations**
 
 **Task 13: Identify Members with Overdue Books**
 Write a query to identify members who have overdue books (assume a 30-day return period). Display the member's_id, member's name, book title, issue date, and days overdue.
