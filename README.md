@@ -72,12 +72,12 @@ CREATE TABLE return_status (         return_id VARCHAR(10) PRIMARY KEY,
 
 ```
 ### 2. CRUD Operations
--**Create**: Inserted sample records into the books table.
--**Read**: Retrieved and displayed data from various tables.
--**Update**: Updated records in the employees table.
--**Delete**: Removed records from the members table as needed.
+-**Create**_ Inserted sample records into the books table.
+-**Read**_ Retrieved and displayed data from various tables.
+-**Update**_ Updated records in the employees table.
+-**Delete**_ Removed records from the members table as needed.
 
-**Task 1. Create a New Book Record**
+* *Task 1. Create a New Book Record**
 -- "978-1-60129-456-2', 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Harper Lee', 'J.B. Lippincott & Co.')"
 ```sql
 INSERT INTO books(isbn, book_title, category, rental_price, status, author, publisher) 
